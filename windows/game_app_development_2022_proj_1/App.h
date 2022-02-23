@@ -4,16 +4,19 @@
 
 namespace activation = winrt::Windows::ApplicationModel::Activation;
 
-namespace winrt::game_app_development_2022_proj_1::implementation
-{
-    struct App : AppT<App>
-    {
-        App() noexcept;
-        void OnLaunched(activation::LaunchActivatedEventArgs const&);
-        void OnActivated(Windows::ApplicationModel::Activation::IActivatedEventArgs const &e);
-        void OnSuspending(IInspectable const&, Windows::ApplicationModel::SuspendingEventArgs const&);
-        void OnNavigationFailed(IInspectable const&, Windows::UI::Xaml::Navigation::NavigationFailedEventArgs const&);
-      private:
-        using super = AppT<App>;
-    };
-} // namespace winrt::game_app_development_2022_proj_1::implementation
+namespace winrt::game_app_development_2022_proj_1::implementation {
+struct App : AppT<App> {
+	App() noexcept;
+	void OnLaunched(activation::LaunchActivatedEventArgs const&);
+	void OnActivated(
+		Windows::ApplicationModel::Activation::IActivatedEventArgs const& e);
+	void OnSuspending(IInspectable const&,
+					  Windows::ApplicationModel::SuspendingEventArgs const&);
+	void OnNavigationFailed(
+		IInspectable const&,
+		Windows::UI::Xaml::Navigation::NavigationFailedEventArgs const&);
+
+   private:
+	using super = AppT<App>;
+};
+}  // namespace winrt::game_app_development_2022_proj_1::implementation

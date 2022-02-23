@@ -17,6 +17,21 @@
 	"vueIndentScriptAndStyle": false,
 	"overrides": [
 		{
+			"files": [
+				"nuget.config",
+				"*.props",
+				"*.filters",
+				"*.vcxproj",
+				"*.targets",
+				"*.xaml",
+				"packages.config",
+				"*.appxmanifest"
+			],
+			"options": {
+				"parser": "xml"
+			}
+		},
+		{
 			"files": ["*.yml", "*.yaml"],
 			"options": {
 				"singleQuote": false,
