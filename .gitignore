@@ -1,7 +1,8 @@
+###
 ## proj specific rules:
 ###
 
-
+!.gitkeep
 # Windows thumbnail cache files
 Thumbs.db
 Thumbs.db:encryptable
