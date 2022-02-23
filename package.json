@@ -11,10 +11,9 @@
 		"test": "jest --watchAll",
 		"web": "expo start --web",
 		"windows": "react-native run-windows",
-		"pretty": "prettier --write .",
+		"pretty": "prettier --write . && ./clang-format.sh",
 		"format": "yarn pretty",
-		"lint": "eslint .",
-		"clangformat": "clang-format -i -style=file ."
+		"lint": "eslint ."
 	},
 	"jest": {
 		"preset": "jest-expo"
