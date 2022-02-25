@@ -1,5 +1,0 @@
-namespace game_app_development_2022_proj_1 {
-[default_interface] runtimeclass MainPage : Windows.UI.Xaml.Controls.Page {
-	MainPage();
-}
-}  // namespace game_app_development_2022_proj_1

@@ -11,9 +11,8 @@ module.exports = {
 	env: {
 		browser: true,
 		node: true,
-		'react-native/react-native': true,
 	},
-	plugins: ['prettier', 'react', 'react-native'],
+	plugins: ['prettier'],
 	globals: {},
 	rules: {
 		'prettier/prettier': 'warn',
