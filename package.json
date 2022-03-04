@@ -3,14 +3,11 @@
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
-		"watch": "nodemon app",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"pretty": "prettier --write . && ./clang-format.sh",
+		"start": "nodemon app",
+		"pretty": "prettier --write . && .\\clang-format.ps1",
 		"format": "yarn pretty",
-		"lint": "eslint ."
-	},
-	"jest": {
-		"preset": "jest-expo"
+		"lint": "eslint .",
+		"less": "lessc ./assets/style/main.less ./assets/style/index.css"
 	},
 	"dependencies": {
 		"express": "^4.17.3",
@@ -24,8 +21,6 @@
 		"eslint": "^8.9.0",
 		"eslint-config-prettier": "^8.4.0",
 		"eslint-plugin-prettier": "^4.0.0",
-		"eslint-plugin-react": "^7.28.0",
-		"eslint-plugin-react-native": "^4.0.0",
 		"mark-gutenberger-prettier-config": "^1.0.0",
 		"nodemon": "^2.0.15",
 		"typescript": "~4.3.5"

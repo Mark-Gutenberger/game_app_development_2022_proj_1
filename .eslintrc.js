@@ -1,4 +1,5 @@
 module.exports = {
+	es6: true,
 	root: true,
 	extends: ['eslint:recommended', 'prettier'],
 	parserOptions: {

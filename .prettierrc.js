@@ -1,3 +1,3 @@
 module.exports = {
-	...require('mark-gutenberger-prettier-config')
+	...require('mark-gutenberger-prettier-config'),
 };
