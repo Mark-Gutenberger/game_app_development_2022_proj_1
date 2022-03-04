@@ -7,7 +7,8 @@
 		"pretty": "prettier --write . && .\\clang-format.ps1",
 		"format": "yarn pretty",
 		"lint": "eslint .",
-		"less": "lessc ./assets/style/main.less ./assets/style/index.css"
+		"less": "lessc ./assets/style/main.less ./assets/style/index.css",
+		"compile": "coffee --compile --map . && yarn pretty"
 	},
 	"dependencies": {
 		"express": "^4.17.3",
@@ -18,8 +19,10 @@
 	"devDependencies": {
 		"@babel/core": "^7.12.9",
 		"@prettier/plugin-xml": "^1.2.0",
+		"coffeescript": "^2.6.1",
 		"eslint": "^8.9.0",
 		"eslint-config-prettier": "^8.4.0",
+		"eslint-plugin-coffeescript": "^1.0.0",
 		"eslint-plugin-prettier": "^4.0.0",
 		"mark-gutenberger-prettier-config": "^1.0.0",
 		"nodemon": "^2.0.15",

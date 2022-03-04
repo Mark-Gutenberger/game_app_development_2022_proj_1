@@ -13,7 +13,7 @@ module.exports = {
 		browser: true,
 		node: true,
 	},
-	plugins: ['prettier'],
+	plugins: ['prettier', 'coffeescript'],
 	globals: {},
 	rules: {
 		'prettier/prettier': 'warn',
