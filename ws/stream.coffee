@@ -4,7 +4,7 @@ Author: Mark Gutenberger <mark-gutenberger@outlook.com>
 stream.coffee (c) 2022
 Desc: description
 Created:  2022-03-04T14:13:06.709Z
-Modified: 2022-03-07T13:53:33.757Z
+Modified: 2022-03-07T14:08:17.562Z
 ###
 STREAM = (socket) =>
 	socket.on(
