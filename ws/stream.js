@@ -6,7 +6,7 @@
   stream.coffee (c) 2022
   Desc: description
   Created:  2022-03-04T14:13:06.709Z
-  Modified: 2022-03-04T14:25:25.226Z
+  Modified: 2022-03-07T14:06:39.253Z
   */
 	var STREAM;
 

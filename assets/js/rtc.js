@@ -5,9 +5,13 @@ window.addEventListener('load', () => {
 	const username = sessionStorage.getItem('username');
 
 	if (!room) {
-		document.querySelector('#room-create').attributes.removeNamedItem('hidden');
+		document
+			.querySelector('#room-create')
+			.attributes.removeNamedItem('hidden');
 	} else if (!username) {
-		document.querySelector('#username-set').attributes.removeNamedItem('hidden');
+		document
+			.querySelector('#username-set')
+			.attributes.removeNamedItem('hidden');
 	} else {
 		let commElem = document.getElementsByClassName('room-comm');
 

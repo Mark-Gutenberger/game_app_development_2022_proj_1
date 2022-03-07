@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"start": "nodemon app",
-		"pretty": "prettier --write . && .\\clang-format.ps1",
+		"pretty": "prettier --write .",
 		"format": "yarn pretty",
 		"lint": "eslint .",
 		"less": "lessc ./assets/style/main.less ./assets/style/index.css",
@@ -26,6 +26,8 @@
 		"eslint-plugin-prettier": "^4.0.0",
 		"mark-gutenberger-prettier-config": "^1.0.0",
 		"nodemon": "^2.0.15",
+		"prettier": "github:helixbass/prettier#prettier-v2.1.0-dev.100-gitpkg",
+		"prettier-plugin-coffeescript": "^0.1.5",
 		"typescript": "~4.3.5"
 	}
 }

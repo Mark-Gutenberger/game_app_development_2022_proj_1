@@ -5,7 +5,7 @@ const io = require('socket.io')(server);
 const stream = require('./ws/stream.old');
 const path = require('path');
 const favicon = require('serve-favicon');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 12;
 
 app.use(favicon(path.join(__dirname, 'favicon.ico')));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));

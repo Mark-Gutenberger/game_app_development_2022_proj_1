@@ -538,7 +538,7 @@ clone-response@^1.0.2:
   dependencies:
     mimic-response "^1.0.0"
 
-coffeescript@^2.1.1, coffeescript@^2.6.1:
+coffeescript@^2.1.1, coffeescript@^2.5.0, coffeescript@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/coffeescript/-/coffeescript-2.6.1.tgz#f9e5d4930e1b8a1c5cfba7f95eebd18694ce58fd"
   integrity sha512-GG5nkF93qII8HmHqnnibkgpp/SV7PSnSPiWsbinwya7nNOe95aE/x2xrKZJFks8Qpko3TNrC+/LahaKgrz5YCg==
@@ -1681,10 +1681,23 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
+prettier-plugin-coffeescript@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-coffeescript/-/prettier-plugin-coffeescript-0.1.5.tgz#6e8a002ecc952801e65fb9af14a8bc9943664450"
+  integrity sha512-xezyA/aQH2P9SyPQU2VMkcPdkq4Ekc8gI+hmnP/noJBJfPwSoFZHcwapWfEDTlOq8BxZ9bqdPHzdZf2jQ9m2Cg==
+  dependencies:
+    coffeescript "^2.5.0"
+    esutils "^2.0.2"
+    prettier "github:helixbass/prettier#prettier-v2.1.0-dev.100-gitpkg"
+
 prettier@>=2.3:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
   integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
+
+"prettier@github:helixbass/prettier#prettier-v2.1.0-dev.100-gitpkg":
+  version "2.1.0-dev.100"
+  resolved "https://codeload.github.com/helixbass/prettier/tar.gz/1396f0979c6f6395e70384945a38888af23db6e0"
 
 proxy-addr@~2.0.7:
   version "2.0.7"
