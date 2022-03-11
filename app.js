@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
-const stream = require('./ws/stream.old');
+const stream = require('./ws/stream');
 const path = require('path');
 const favicon = require('serve-favicon');
 const PORT = process.env.PORT || 12;
@@ -17,5 +17,5 @@ app.get('/', (req, res) => {
 io.of('/stream').on('connection', stream);
 
 server.listen(PORT, () => {
-	console.log('Server started on port 3000');
+	console.log(`Server started on port: ${PORT}`);
 });
