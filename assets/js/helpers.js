@@ -1,7 +1,6 @@
-export default {
-	generateRandomString() {
-		const crypto = window.crypto || window.msCrypto;
-		let array = new Uint32Array(1);
+generateRandomString() {
+	const crypto = window.crypto || window.msCrypto;
+	let array = new Uint32Array(1);
 
 		return crypto.getRandomValues(array);
 	},
@@ -298,4 +297,25 @@ export default {
 			}
 		}, 2000);
 	},
+export default {
+	createDemoRemotes,
+	adjustVideoElemSize,
+	setLocalStream,
+	crypto,
+	pageHasFocus,
+	getQString,
+	userMediaAvailable,
+	getUserFullMedia,
+	getUserAudio,
+	shareScreen,
+	getIceServer,
+	addChat,
+	toggleChatNotificationBadge,
+	replaceTrack,
+	toggleShareIcons,
+	toggleVideoBtnDisabled,
+	maximiseStream,
+	singleStreamToggleMute,
+	saveRecordedStream,
+	generateRandomString
 };

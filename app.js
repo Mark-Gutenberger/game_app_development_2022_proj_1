@@ -5,6 +5,7 @@ const io = require('socket.io')(server);
 const stream = require('./ws/stream');
 const path = require('path');
 const favicon = require('serve-favicon');
+const { mainModule } = require('process');
 const PORT = process.env.PORT || 12;
 
 app.use(favicon(path.join(__dirname, 'favicon.ico')));
@@ -16,6 +17,13 @@ app.get('/', (req, res) => {
 
 io.of('/stream').on('connection', stream);
 
-server.listen(PORT, () => {
-	console.log(`Server started on port: ${PORT}`);
-});
+function Main() {
+	try {
+		server.listen(PORT, () => {
+			console.log(`Server started on port: ${PORT}`);
+		});
+	} catch (err) {
+		console.log(err);
+	}
+}
+Main();
