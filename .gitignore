@@ -1,6 +1,7 @@
 ###
 ## proj specific rules:
 *.css
+.ignore
 .npmrc
 ###
 
