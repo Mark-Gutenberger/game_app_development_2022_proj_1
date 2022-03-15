@@ -1,25 +1,25 @@
-* {
-	background-color: #2e2e2e !important;
-	color: white !important;
-}
 
-::root {
-	background-color: #2e2e2e !important;
-	color: white !important;
+	@white: #eee;
+	@dark: #2e2e2e;
+
+
+body {
+	background-color: @dark;
+	color: @white;
 }
 
 .chat-col {
-	right: -100vw;
-	bottom: 0;
-	top: 40.5px;
-	z-index: 1000;
-	position: fixed;
-	color: #2e2e2e;
-	padding-right: 5px;
-	padding-left: 5px;
-	padding-bottom: 40px;
-	padding-top: 15px;
-	min-height: 100vh;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	z-index: 1000 !important;
+	position: absolute !important;
+	color: @dark;
+	// padding-right: 5px;
+	// padding-left: 5px;
+	// padding-bottom: 40px;
+	// padding-top: 15px;
+	// min-height: 100vh;
 }
 
 .chat-col.chat-opened {
@@ -41,7 +41,7 @@
 }
 
 #chat-messages::-webkit-scrollbar {
-	width: 0px; /* remove scrollbar space */
+	width: 0; // remove scrollbar space
 	background: transparent;
 }
 
@@ -50,8 +50,8 @@
 	right: 0;
 	position: absolute;
 	border: 0;
-	border-top: 1px groove white;
-	border-left: 1px groove white;
+	border-top: 1px groove @white;
+	border-left: 1px groove @white;
 	font-size: small;
 }
 
@@ -121,8 +121,8 @@
 .msg {
 	font-weight: 400;
 	font-size: 12px;
-	color: white;
-	background-color: #2e2e2e;
+	color: black;
+	background-color: wheat;
 }
 
 .chat-card {
@@ -141,8 +141,8 @@
 	position: fixed;
 	top: 0;
 	text-align: center;
-	background: white;
-	color: #2e2e2e;
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
 	border-radius: 0%;
 	z-index: 100;
 }
@@ -172,7 +172,7 @@
 }
 
 .custom-modal-content {
-	background-color: #2e2e2e;
+	background-color: #fefefe;
 	margin: 15% auto;
 	padding: 20px;
 	border: 1px solid #17a2b8;

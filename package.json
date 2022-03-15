@@ -7,7 +7,7 @@
 		"pretty": "prettier --write .",
 		"format": "yarn pretty",
 		"lint": "yarn format && eslint .",
-		"less": "lessc ./assets/style/main.less ./assets/style/index.css",
+		"less": "lessc ./assets/style/main.less ./assets/style/main.css",
 		"compile": "coffee --compile --map . && yarn less && yarn pretty"
 	},
 	"dependencies": {
