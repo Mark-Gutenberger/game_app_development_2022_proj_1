@@ -3,22 +3,21 @@
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
-		"start": "yarn compile && nodemon app",
+		"start": " compile && yarn nodemon app",
 		"pretty": "prettier --write .",
 		"format": "yarn pretty",
 		"lint": "yarn format && eslint .",
 		"less": "lessc ./assets/style/main.less ./assets/style/main.css",
-		"compile": "coffee --compile --map . && yarn less && yarn pretty"
+		"compile": "coffee --compile --map . && yarn less && yarn pretty",
+		"dev": "nodemon app"
 	},
 	"dependencies": {
 		"express": "^4.17.3",
-		"serve-favicon": "^2.5.0",
-		"socket.io": "^4.4.1",
-		"socket.io-client": "^4.4.1"
+		"socket.io": "^4.4.1"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.9",
-		"@mark-gutenberger/prettier-config": "1.2.6",
+		"@mark-gutenberger/prettier-config": "^1.2.12",
 		"@prettier/plugin-xml": "^1.2.0",
 		"coffeescript": "^2.6.1",
 		"eslint": "^8.9.0",

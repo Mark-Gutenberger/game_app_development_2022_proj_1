@@ -4,11 +4,9 @@ const server = require('http').Server(app);
 const io = require('socket.io')(server);
 const stream = require('./ws/stream');
 const path = require('path');
-const favicon = require('serve-favicon');
 const { mainModule } = require('process');
-const PORT = process.env.PORT || 12;
+const PORT = process.env.PORT || 3000;
 
-app.use(favicon(path.join(__dirname, 'favicon.ico')));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 app.get('/', (req, res) => {

@@ -1,8 +1,8 @@
 ###
 ## proj specific rules:
-*.css
+# *.css
 .ignore
-.npmrc
+!.npmrc
 ###
 
 !.gitkeep
@@ -626,7 +626,8 @@ replay_pid*
 *.su
 *.idb
 # Kernel Module Compile Results
-*.mod
+*.mod*
+*.cmd
 .tmp_versions/
 modules.order
 Module.symvers
