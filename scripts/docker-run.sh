@@ -4,7 +4,7 @@
 # docker-run.sh (c) 2022
 # Desc: runs the docker image
 # Created:  2022-03-24T02:07:04.958Z
-# Modified: 2022-03-24T02:20:16.534Z
+# Modified: 2022-04-19T14:08:00.414Z
 
 printf "\e[33mWARN: Make sure you built the container first...\e[0m\n"
 
